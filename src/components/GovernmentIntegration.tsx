@@ -46,7 +46,7 @@ import {
 export interface GovernmentScheme {
   id: string;
   name: string;
-  nameHindi: string;
+  nameKannada: string;
   description: string;
   department: string;
   category: 'subsidy' | 'insurance' | 'loan' | 'training' | 'infrastructure' | 'direct-benefit' | 'input-support';
@@ -208,7 +208,7 @@ const GovernmentIntegration: React.FC = () => {
       {
         id: 'pmkisan',
         name: 'PM-KISAN Samman Nidhi',
-        nameHindi: 'प्रधानमंत्री किसान सम्मान निधि',
+        nameKannada: 'ಪ್ರಧಾನಮಂತ್ರಿ ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ',
         description: 'Direct income support of ₹6000 per year to all farmer families having cultivable land holding.',
         department: 'Ministry of Agriculture & Farmers Welfare',
         category: 'direct-benefit',
@@ -243,7 +243,7 @@ const GovernmentIntegration: React.FC = () => {
       {
         id: 'kisancredit',
         name: 'Kisan Credit Card',
-        nameHindi: 'किसान क्रेडिट कार्ड',
+        nameKannada: 'ಕಿಸಾನ್ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್',
         description: 'Flexible credit facility for cultivation and other needs of farmers at subsidized interest rates.',
         department: 'Ministry of Agriculture & Farmers Welfare',
         category: 'loan',
@@ -279,7 +279,7 @@ const GovernmentIntegration: React.FC = () => {
       {
         id: 'pmfby',
         name: 'Pradhan Mantri Fasal Bima Yojana',
-        nameHindi: 'प्रधानमंत्री फसल बीमा योजना',
+        nameKannada: 'ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬೀಮಾ ಯೋಜನೆ',
         description: 'Comprehensive crop insurance scheme providing coverage against yield losses due to natural calamities.',
         department: 'Ministry of Agriculture & Farmers Welfare',
         category: 'insurance',
@@ -315,7 +315,7 @@ const GovernmentIntegration: React.FC = () => {
       {
         id: 'pmkusum',
         name: 'PM-KUSUM Solar Pump Scheme',
-        nameHindi: 'प्रधानमंत्री कुसुम योजना',
+        nameKannada: 'ಪ್ರಧಾನಮಂತ್ರಿ ಕುಸುಮ್ ಯೋಜನೆ',
         description: 'Installation of solar pumps and grid connected solar power plants for farmers.',
         department: 'Ministry of New and Renewable Energy',
         category: 'subsidy',
@@ -655,7 +655,7 @@ const GovernmentIntegration: React.FC = () => {
                         <span className="capitalize">{scheme.category.replace('-', ' ')}</span>
                       </Badge>
                     </div>
-                    <h4 className="font-medium text-gray-900">{scheme.nameHindi}</h4>
+                    <h4 className="font-medium text-gray-900">{scheme.nameKannada}</h4>
                     <p className="text-sm text-gray-600 mb-2">{scheme.name}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-lg font-bold text-green-600">
@@ -697,7 +697,7 @@ const GovernmentIntegration: React.FC = () => {
                         )}
                       </div>
                       
-                      <h3 className="text-lg font-semibold text-gray-900">{scheme.nameHindi}</h3>
+                      <h3 className="text-lg font-semibold text-gray-900">{scheme.nameKannada}</h3>
                       <p className="text-sm text-gray-600 mb-2">{scheme.name}</p>
                       <p className="text-gray-700 mb-3">{scheme.description}</p>
                       
@@ -782,7 +782,7 @@ const GovernmentIntegration: React.FC = () => {
                       <SelectContent>
                         {eligibleSchemes.map((scheme) => (
                           <SelectItem key={scheme.id} value={scheme.id}>
-                            {scheme.nameHindi}
+                            {scheme.nameKannada}
                           </SelectItem>
                         ))}
                       </SelectContent>

@@ -64,7 +64,7 @@ export interface ForumPost {
   isSolved: boolean;
   hasImage: boolean;
   urgency: 'low' | 'medium' | 'high';
-  language: 'hindi' | 'english';
+  language: 'kannada' | 'english';
 }
 
 export interface Reply {
@@ -241,7 +241,7 @@ const SocialFeatures: React.FC = () => {
         isSolved: true,
         hasImage: true,
         urgency: 'high',
-        language: 'hindi'
+        language: 'kannada'
       },
       {
         id: '2',
@@ -277,7 +277,7 @@ const SocialFeatures: React.FC = () => {
         isSolved: false,
         hasImage: false,
         urgency: 'low',
-        language: 'hindi'
+        language: 'kannada'
       },
       {
         id: '4',
@@ -546,7 +546,7 @@ const SocialFeatures: React.FC = () => {
       isSolved: false,
       hasImage: false,
       urgency: 'medium',
-      language: 'hindi'
+      language: 'kannada'
     };
     
     setForumPosts(posts => [newPost, ...posts]);
@@ -672,12 +672,12 @@ const SocialFeatures: React.FC = () => {
                     <Bookmark className="h-4 w-4 mr-2" />
                     Add Image
                   </Button>
-                  <Select defaultValue="hindi">
+                  <Select defaultValue="kannada">
                     <SelectTrigger className="w-32">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="hindi">हिंदी</SelectItem>
+                      <SelectItem value="kannada">ಕನ್ನಡ</SelectItem>
                       <SelectItem value="english">English</SelectItem>
                     </SelectContent>
                   </Select>

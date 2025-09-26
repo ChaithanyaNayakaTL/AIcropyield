@@ -35,7 +35,7 @@ class AccessibilityManager {
       this.recognition = new (window as any).webkitSpeechRecognition();
       this.recognition.continuous = true;
       this.recognition.interimResults = true;
-      this.recognition.lang = 'hi-IN,en-IN'; // Support both Hindi and English
+      this.recognition.lang = 'kn-IN,en-IN'; // Support both Kannada and English
 
       this.recognition.onstart = () => {
         console.log('Voice recognition started');
@@ -308,7 +308,7 @@ class AccessibilityManager {
   }
 
   private parseNumberFromSpeech(speech: string): number | null {
-    // Handle both English and Hindi numbers
+    // Handle both English and Kannada numbers
     const numberWords: { [key: string]: string } = {
       'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4',
       'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9',
@@ -317,9 +317,9 @@ class AccessibilityManager {
       'eighteen': '18', 'nineteen': '19', 'twenty': '20', 'thirty': '30',
       'forty': '40', 'fifty': '50', 'sixty': '60', 'seventy': '70',
       'eighty': '80', 'ninety': '90', 'hundred': '100', 'thousand': '1000',
-      // Hindi numbers
-      'शून्य': '0', 'एक': '1', 'दो': '2', 'तीन': '3', 'चार': '4',
-      'पांच': '5', 'छह': '6', 'सात': '7', 'आठ': '8', 'नौ': '9', 'दस': '10'
+      // Kannada numbers
+      'ಸೊನ್ನೆ': '0', 'ಒಂದು': '1', 'ಎರಡು': '2', 'ಮೂರು': '3', 'ನಾಲ್ಕು': '4',
+      'ಐದು': '5', 'ಆರು': '6', 'ಏಳು': '7', 'ಎಂಟು': '8', 'ಒಂಬತ್ತು': '9', 'ಹತ್ತು': '10'
     };
 
     // First try to extract direct numbers

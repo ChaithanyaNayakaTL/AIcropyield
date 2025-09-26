@@ -145,13 +145,13 @@ export const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ isOpen, 
               <div className="bg-blue-50 p-3 rounded-lg">
                 <h4 className="font-medium text-sm mb-2 flex items-center gap-2">
                   <Languages className="h-4 w-4" />
-                  Voice Commands (Hindi/English)
+                  Voice Commands (Kannada/English)
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
                   <div>
-                    <p><strong>"Go Home"</strong> / <strong>"होम पर जाएं"</strong></p>
-                    <p><strong>"Predict Yield"</strong> / <strong>"फसल की भविष्यवाणी"</strong></p>
-                    <p><strong>"Open Chat"</strong> / <strong>"चैट खोलें"</strong></p>
+                    <p><strong>"Go Home"</strong> / <strong>"ಮನೆಗೆ ಹೋಗು"</strong></p>
+                    <p><strong>"Predict Yield"</strong> / <strong>"ಇಳುವರಿ ಊಹಿಸು"</strong></p>
+                    <p><strong>"Open Chat"</strong> / <strong>"ಚಾಟ್ ತೆರೆಯಿರಿ"</strong></p>
                   </div>
                   <div>
                     <p><strong>"Help"</strong> / <strong>"मदद"</strong></p>
